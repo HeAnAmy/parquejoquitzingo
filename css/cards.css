@@ -1,0 +1,17 @@
+.card{
+    margin: 20px;
+    padding: 20px;
+    border: 5px white solid;
+}
+.card p{
+    text-align: justify;
+}
+.card h1{
+    text-align: center;
+    color: darkorange;
+}
+.card1:hover{
+    background-color:#F29325;
+    color: white;
+}
+
