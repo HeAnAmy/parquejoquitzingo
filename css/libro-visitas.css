@@ -1,0 +1,29 @@
+.contenedor-botones-años {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.button {
+    padding: 40px 20px;
+    border: none;
+    background-color: #ff8a02;
+    border-radius: 5px;
+    color: white;
+    font: bold;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+.h1 {
+    margin: 100px auto 0 auto;
+    width: 60%;
+}
+
+h1 {
+    text-align: center;
+}
