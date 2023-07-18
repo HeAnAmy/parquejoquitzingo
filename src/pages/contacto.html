@@ -7,6 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Parque de estudios y reflexión Joquitzingo</title>
       <link rel="stylesheet" href="../../css/index.css">
+      <link rel="stylesheet" href="../../css/contacto.css">
       <link rel="shortcut icon" href="./src/img/Iconos/logo.png" type="image/x-icon">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     </head>
@@ -39,62 +40,82 @@
   </header>
    
         <main class="container text-center">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
             <h1 class="m-3s">Contacto</h1>
-                <img class="p-4 m-4" loading="lazy" src="../img/7.jpeg" alt="imagen contacto" style="width: 45rem; height: 30rem;">
+                <img class="p-4 m-4 responsive-img" loading="lazy" src="../img/7.jpeg" alt="imagen contacto" style="width: 45rem; height: 30rem;">
         
             <h2>Llene el formulario de Contacto</h2>
           <div class="d-flex justify-content-center align-items-center m-4 ">
-            <form class="card custom-bg p-4 " style="width: 50rem;">
-              <div class=" mb-4">
-                <label for="exampleFormControlInput1" class="form-label">Tu Nombre</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Nombre"
-                />
+            <div class="row align-items-center p-2">
+                <div class="col-md-6">
+                  <form action="https://formsubmit.co/contacto.joqui@gmail.com" method="POST"  class="card p-4" style="width: 100%; background: #FF8A02;">
+                    <div class=" mb-4">
+                      <label for="exampleFormControlInput1" class="form-label">Tu Nombre</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="nombre"
+                        id="nombre"
+                        placeholder="Nombre"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Tu Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        placeholder="name@example.com"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Tu Télefono</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="telefono"
+                        id="telefono"
+                        placeholder="Télefono"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label for="exampleFormControlTextarea1" class="form-label"
+                        >Escribe un Mensaje</label>
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                      
+                        rows="4"
+                        name="mensaje"
+                        placeholder="Mensaje"
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/src/pages/contacto.html"> <!-- Cambiar Value por URL de producción -->
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
               </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Tu Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="name@example.com"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
-                  >Tu Télefono</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="name@example.com"
-                />
-              </div>
-              <div class="mb-4">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Escribe un Mensaje</label>
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                  placeholder="Mensaje"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
-          </form>
+                <div class="col-md-6">
+                    <img src="../img/Picture.png" alt="Silo" class="img-fluid mt-4">
+                </div>
+             
           </div>
+      </div>
            
 
 
-            <div class="text-center pt-5 pb-5">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15086.466496764959!2d-99.5055113!3d19.0366079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdeb7e0e2f9e0d%3A0x82c6697725159e3!2sParque%20de%20Estudio%20y%20Reflexi%C3%B3n%20Joquicingo!5e0!3m2!1ses!2smx!4v1687115765237!5m2!1ses!2smx" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> 
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15086.466496764959!2d-99.5055113!3d19.0366079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdeb7e0e2f9e0d%3A0x82c6697725159e3!2sParque%20de%20Estudio%20y%20Reflexi%C3%B3n%20Joquicingo!5e0!3m2!1ses!2smx!4v1687115765237!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="450" style="border:0;"></iframe>
+          </div>
+          
+          </div> 
+        </div>   
       </main>
    <!--Footer-->
-   <div class="footer-clean">
+   <div class="footer-clean mt-4">
     <footer>
         <div class="container">
             <div class="row justify-content-center">
