@@ -1,9 +1,19 @@
-input:not([type="submit"]),
-textarea{
-    padding: 1rem;
-        display: block;
-        width: 100%;
-        background-color: #FFFFFF;
-        border-radius: 1rem;
-        margin-bottom: 2rem;
-}
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+
+  .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }

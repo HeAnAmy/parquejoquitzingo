@@ -73,6 +73,9 @@ h5{
     text-align:center;
   }
 }
+.custom-bg{
+  background-color: #FF8A02;
+}
 
 .footer-clean .item.social > a {
   font-size:24px;
