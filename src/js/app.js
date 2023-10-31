@@ -47,7 +47,7 @@ const searchInput = document.getElementById("searchInput");
 
     function searchLinks(parque, autor, query) {
         // Obtener los enlaces correspondientes al parque y autor seleccionado
-        const enlaces = biblioteca[parque][autor];
+        const enlaces = biblioteca.js[parque][autor];
     
         query = query.toLowerCase();
         return enlaces.filter(link => link.name.toLowerCase().includes(query));
